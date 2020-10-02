@@ -1,3 +1,4 @@
+import 'package:esep_client/routes/qrscanpage.dart';
 import 'package:flutter/material.dart';
 
 import 'routes/signin.dart';
@@ -8,7 +9,7 @@ class ESEP extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "XSEP",
+      title: "Scan QR code",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -19,7 +20,7 @@ class ESEP extends StatelessWidget {
         ),
         scaffoldBackgroundColor: Colors.transparent,
       ),
-      home: Login(),
+      home: Scan(),
     );
   }
 }
